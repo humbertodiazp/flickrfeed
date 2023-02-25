@@ -1,24 +1,6 @@
-# README
+FlickrFeed
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple rails app to practice using an external API to create a photo feed
+based on flicker user id's. 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+following curriculum from https://www.theodinproject.com/

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Staticpages</h1>
+
+<div id="staticpages">
+  <% @staticpages.each do |staticpage| %>
+    <%= render staticpage %>
+    <p>
+      <%= link_to "Show this staticpage", staticpage %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New staticpage", new_staticpage_path %>

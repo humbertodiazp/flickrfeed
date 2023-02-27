@@ -1,6 +1,7 @@
 class StaticpagesController < ApplicationController
   before_action :set_staticpage, only: %i[ show edit update destroy ]
 
+
   # GET /staticpages or /staticpages.json
   def index
     @staticpages = Staticpage.all
@@ -8,6 +9,8 @@ class StaticpagesController < ApplicationController
 
   # GET /staticpages/1 or /staticpages/1.json
   def show
+   
+   
   end
 
   # GET /staticpages/new
@@ -22,11 +25,13 @@ class StaticpagesController < ApplicationController
   # POST /staticpages or /staticpages.json
   def create
     @staticpage = Staticpage.new(staticpage_params)
+    flickr = Flickraw.new
 
     respond_to do |format|
       if @staticpage.save
         format.html { redirect_to staticpage_url(@staticpage), notice: "Staticpage was successfully created." }
-        format.json { render :show, status: :created, location: @staticpage }
+        format.json { render :show, status: :created, location: @staticpage, :partial => 'photo', :collection =>
+        flickr.photos(:tags => params[:tags], :per_page => '24')
       else
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @staticpage.errors, status: :unprocessable_entity }

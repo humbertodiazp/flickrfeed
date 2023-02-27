@@ -3,8 +3,12 @@
 <%= render @staticpage %>
 
 <div>
-  <%= link_to "Edit this staticpage", edit_staticpage_path(@staticpage) %> |
-  <%= link_to "Back to staticpages", staticpages_path %>
-
-  <%= button_to "Destroy this staticpage", @staticpage, method: :delete %>
+  <table>
+    <% @photos.each do |p| %>
+        <td>
+          <img class='photo' src="<%= photo.sizes[0]['source'] %>">
+      </td>
+    <% end %>
+  </table>
+  <%= link_to "New Search", staticpages_path %>
 </div>

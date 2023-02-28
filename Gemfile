@@ -24,7 +24,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 #flickr api gem
-gem "flickraw"
+gem "flickr"
 # use to set enviroment variables 
 gem "figaro"
 

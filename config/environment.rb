@@ -1,6 +1,6 @@
 # Load the Rails application.
 require_relative "application"
-require "flickraw"
+require "flickr"
 
 # Initialize the Rails application.
 Rails.application.initialize!

@@ -1,14 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @staticpage %>
 
-<div>
-  <table>
-    <% @photos.each do |p| %>
-        <td>
-          <img class='photo' src="<%= photo.sizes[0]['source'] %>">
-      </td>
-    <% end %>
-  </table>
-  <%= link_to "New Search", staticpages_path %>
-</div>
+
+<% @photosets[0].each do |image| %>
+<%= image_tag image %>
+<% end %>

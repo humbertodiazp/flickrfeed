@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+#staticpages{
+    margin-top: 10vh;
+    border-radius:1em;
+    padding: 2em;
+    border-style: solid;
+    text-align: center;
+ 
+}

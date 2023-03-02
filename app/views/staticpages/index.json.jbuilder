@@ -1,1 +1,1 @@
-json.array! @staticpages, partial: "staticpages/staticpage", as: :staticpage
+json.partial! "staticpages/staticpage", staticpage: @staticpages

@@ -8,9 +8,9 @@ based on flicker user id's.
 <img width="1017" alt="image" src="https://user-images.githubusercontent.com/97567622/222357804-1165f1e7-8d97-4efa-9c52-b2c739e64ba0.png">
 
 Built With
-Ruby on Rails - Web framework
-Figaro - Rails gem
-Flickr - Rails gem
-Simple CSS 
+- Ruby on Rails - Web framework
+- Figaro - Rails gem
+- Flickr - Rails gem
+- Simple CSS 
 
 following curriculum from https://www.theodinproject.com/
